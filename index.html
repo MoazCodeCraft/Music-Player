@@ -19,23 +19,24 @@
             </div>
         </nav>
         <img src="Capture.PNG" class="song-img">
-        <h1>Allah Hoo</h1>
+        <h1 id="song-tittle">Allah Hoo</h1>
         <p>Nusrat Fateh Ali khan</p>       
         
-        <audio controls >
+        <audio  id="song" >
             <source src="Allahoo Allahoo - Nusrat Fateh Ali Khan - PakistaniMusicTV [Official].mp4" type="audio/mpeg">
         </audio>
         <input type="range" value="0" id="progress">
         <div class="control">
             
-            <div >  <i class="fa-solid fa-backward"></i></div> 
-            <div >  <i class="fa-solid fa-play"></i></div>
-            <div>  <i class="fa-solid fa-forward"></i></div>
+            <div id="pre">  <i class="fa-solid fa-backward"></i></div> 
+            <div onclick="playPause()" >  <i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div id="next">  <i class="fa-solid fa-forward"></i></div>
 
             
         </div>
     </div>
 </div>
+
 
 <script src="script.js"></script> 
 </body>
